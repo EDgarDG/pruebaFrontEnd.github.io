@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResAPI</title>
+
+    <!-- FONT AWESOME BY: https://fonts.google.com/ -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+
+   <!-- CUSTOM CSS -->
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/navbar.css">
+   <link rel="stylesheet" href="css/infopage.css">
+   <link rel="stylesheet" href="css/barraSearch.css">
+   <link rel="stylesheet" href="css/infoapi.css">
+   <link rel="stylesheet" href="css/credit.css">
+</head>
+<body>
+    
+
+    <div class="container-grid">
+
+        <!-- ******** MENU DE NAVEGACIÓN ******** -->
+        <header class="header-navbar1">
+            <div class="header-logo">
+                <a href="#"><img src="img/Logo2.png" alt="MiLogotipo" class="logo" id="logonav"></a>
+            </div>
+            
+            <div class="menu-btn">
+                <div class="menu-btn_togger"></div>
+            </div>
+            
+            <ul class="navBar-menu">
+                <li><a href="#home">Acerca de</a></li>
+            </ul>
+        </header>
+        <!-- ******** FIN MENU DE NAVEGACIÓN ******** -->
+        
+        <!-- ******** SECCION DESCRIPCIÓN DE LA PÁGINA ******** -->
+        <section class="info-page" id="home">
+            
+            <div class="info-page-info" id="info-page-info">
+               <h1 class="page-title">Casos de covid-19 en el mundo</h1>
+               
+               <br><hr><br>
+               <p class="page-details">
+                   Esta página esta diseñada con fines educativos, con temática sobre la pandemia, proporciona datos históricos y en tiempo real sobre casos confirmados, muertes y casos recuperados de Coronavirus COVID-19; La aplicación no es para alarmar a las personas si no para informar sobre la pandemia.
+                </p><br>
+            </div>
+        </section>
+        <!-- ******** FIN SECCION DESCRIPCIÓN DE LA PÁGINA ******** -->
+        
+        <!-- ******** BARRA SEARCH ******** -->
+        <section class="section-barra">
+            <h5 class="barra-search-title">Ingresa el nombre del país</h5>
+
+            <div class="barra-search-body">
+                <input id="country" type="text" class="barra-search-barra"  placeholder="Search Country">
+                <a href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+
+            </div>
+            <button type="submit" class="btn-search">Buscar</button>
+        </section>
+        <!-- ******** FIN BARRA SEARCH ******** -->
+        
+        <!-- ******** SECCIÓN TRAER INFORMACION DE LA API ******** -->
+        <section class="section-info-api">
+            <div class="container-info-pais" id="containerInfoPais">
+
+            </div>
+            
+            <div class="container-info-covid" id="containerInfoCovid">
+                <br>
+            </div>
+
+            <div class="container-info-covid2" id="containerInfoCovid2">
+                <br>
+            </div>
+        </section>
+        <!-- ******** FIN SECCIÓN TRAER INFORMACION DE LA API ******** -->
+        
+        <!-- ******** SECCIÓN CREDITOS EDGARDO SÁNCHEZ RIOS ******** -->
+        <section class="credit">
+            <div class="credit-body">
+                <a class="far fa-copyright btn-facebook" target="_blank"> 2021 if code. All rights reserved</a>
+            </div>
+        </section>
+        <!-- ******** FIN SECCIÓN CREDITOS EDGARDO SÁNCHEZ RIOS ******** -->
+    </div>
+
+    <!-- CUSTOM JS SCRIPTS-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+   <script src="https://kit.fontawesome.com/693a372b84.js" crossorigin="anonymous"></script>
+   <script src="js/scrollreveal.js"></script>
+   <script src="js/app.js"></script>
+</body>
+</html>

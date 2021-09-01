@@ -1,0 +1,77 @@
+:root {
+	--color-navbar: #000033;
+	--primary-color: #ffffff;
+	--secundary-color: #000000;
+	--navbar-shallow-color: #e5e5e5;
+	--togeer-color: #99cc00;
+	--navbar-color-mobile: #2c3e50;
+	--box-shadow-colorMobile: #e4e4e4;
+	--profile-title-color: #124f88;
+}
+
+* {
+	/* PROPIEDAD PARA QUE LOS ELEMENTOS HIJOS SE MANTENGAN Y NO CRESCAN Y MEDIDAS SEAN IGUALES*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+section[id] {
+	scroll-margin-top: 80px;
+}
+
+.container-grid {
+	/* outline: 1px solid red; */
+	
+	width: 100%;
+	/* max-width: 1200px; */
+	margin: 15px auto;
+
+	display: grid;
+	grid-gap: 20px;
+
+	grid-template: "nav-bar nav-bar" 80px
+	"info-page info-page" auto
+	"barra-search barra-search" 180px
+	"section-info section-info" 550px
+	"credit credit" auto /
+	1fr 1fr;
+}
+
+@media only screen and (max-width: 768px) {
+	.container-grid {
+		/* outline: 1px solid red; */
+		
+		width: 100%;
+		/* max-width: 1200px; */
+		margin: 10px auto;
+	
+		display: grid;
+		grid-gap: 15px;
+	
+		grid-template: "nav-bar nav-bar" 60px
+		"info-page info-page" auto
+		"barra-search barra-search" auto
+		"section-info section-info" 500px
+		"credit credit" auto /
+		1fr 1fr;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.container-grid {
+		margin: 10px auto;
+		grid-gap: 25px;
+
+		grid-template: "nav-bar" 50px
+		"info-page" auto
+		"barra-search" 200px
+		"section-info" 540px
+		"credit" auto /
+		1fr;
+	}
+}
